@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ética en la Inteligencia Artificial</title>
+
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- ================= NAVBAR ================= -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#"><i class="bi bi-shield-check me-2"></i>Ética en IA</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#hero">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#intro">Introducción</a></li>
+          <li class="nav-item"><a class="nav-link" href="#principios">Puntos Clave</a></li>
+          <li class="nav-item"><a class="nav-link" href="#casos">Casos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ================= HERO ================= -->
+  <header id="hero" class="text-center py-5">
+    <h1 class="hero-title">Ética en la Inteligencia Artificial</h1>
+    <p class="hero-subtitle">
+      La IA debe desarrollarse con responsabilidad, justicia y humanidad. Descubre los principios
+      esenciales que guían su uso ético.
+    </p>
+    <a href="#intro" class="btn btn-dark mt-3 px-4 py-2"><i class="bi bi-book-half me-2"></i>Aprende más</a>
+  </header>
+
+  <!-- ================= INTRODUCCIÓN ================= -->
+  <section id="intro" class="container mb-5">
+    <h2 class="section-title text-center">Introducción</h2>
+    <p class="text-center mx-auto" style="max-width: 800px">
+      La ética en la inteligencia artificial busca orientar el desarrollo de tecnologías inteligentes
+      hacia el respeto por la dignidad humana. Esto implica evitar decisiones automatizadas que reproduzcan
+      prejuicios, proteger la privacidad de los usuarios, garantizar la transparencia en los algoritmos y
+      promover el uso responsable de los datos. Una IA ética no solo debe ser eficiente, sino también justa,
+      segura y confiable
+    </p>
+  </section>
+
+  <!-- ================= PUNTOS CLAVE ================= -->
+  <section id="principios" class="container mb-5">
+    <h2 class="section-title text-center">Principios Fundamentales</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card card-custom p-4">
+          <h5><i class="bi bi-eye me-2"></i>Transparencia</h5>
+          <p>
+            Los sistemas de IA deben explicar de manera clara cómo toman decisiones y qué datos
+            utilizan.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card card-custom p-4">
+          <h5><i class="bi bi-balance-scale me-2"></i>Justicia</h5>
+          <p>
+            La IA debe evitar sesgos y asegurar que sus decisiones no discriminen a ningún grupo.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card card-custom p-4">
+          <h5><i class="bi bi-person-check me-2"></i>Responsabilidad</h5>
+          <p>
+            Las organizaciones deben asumir responsabilidad por el comportamiento de sus sistemas
+            inteligentes.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CASOS / EJEMPLOS ================= -->
+  <section id="casos" class="container mb-5">
+    <h2 class="section-title text-center">Casos Relevantes</h2>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="alert alert-secondary shadow-sm" role="alert">
+          <strong><i class="bi bi-exclamation-triangle me-2"></i>Sesgos en algoritmos de
+            contratación:</strong>
+          Un sistema rechazaba mujeres porque fue entrenado con datos históricos dominados por
+          hombres.<br />
+          <a href="https://www.bbc.com/news/technology-45809919" target="_blank" class="fw-bold text-primary">Leer
+            noticia</a>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="alert alert-secondary shadow-sm" role="alert">
+          <strong><i class="bi bi-emoji-neutral me-2"></i>Reconocimiento facial:</strong>
+          Mayor error en personas de piel oscura debido a bases de datos no representativas.<br />
+          <a href="https://www.nytimes.com/2019/12/19/technology/facial-recognition-bias.html" target="_blank"
+            class="fw-bold text-primary">Leer noticia</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= INTERACTIVO ================= -->
+  <section class="container mb-5" id="quizSection">
+    <h2 class="section-title text-center">Pon a prueba tus conocimientos</h2>
+    <p class="text-center mb-4">¿Cuál de los siguientes es un riesgo ético común en la IA?</p>
+    <div class="d-flex flex-column align-items-center">
+      <select class="form-select w-75" id="quizSelect">
+        <option value="">Selecciona una opción</option>
+        <option value="correcto">Sesgos en los modelos</option>
+        <option value="incorrecto">Aumento del almacenamiento en la nube</option>
+        <option value="incorrecto">Reducción de tareas repetitivas</option>
+      </select>
+      <button class="btn btn-dark mt-3" onclick="checkAnswer()">Comprobar</button>
+      <p id="quizResult"></p>
+    </div>
+  </section>
+
+  <!-- ================= FORMULARIO ================= -->
+  <section id="contacto" class="container mb-5">
+    <h2 class="section-title text-center">Contacto</h2>
+    <form class="mx-auto" style="max-width: 600px">
+      <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre</label>
+        <input type="text" id="nombre" class="form-control" required />
+      </div>
+
+      <div class="mb-3">
+        <label for="email" class="form-label">Correo electrónico</label>
+        <input type="email" id="email" class="form-control" required />
+      </div>
+
+      <div class="mb-3">
+        <label for="mensaje" class="form-label">Mensaje</label>
+        <textarea id="mensaje" class="form-control" rows="4" required></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-dark w-100">
+        <i class="bi bi-send-check me-2"></i>Enviar
+      </button>
+    </form>
+  </section>
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">© 2025 Ética en la IA · Todos los derechos reservados</footer>
+  <script src="script.js"></script>
+</body>
+
+</html>

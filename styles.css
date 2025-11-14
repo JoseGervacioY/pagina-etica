@@ -1,0 +1,230 @@
+/* ==================================================
+   ESTILOS GENERALES - DISEÑO MODERNO Y LLAMATIVO
+   ================================================== */
+body {
+  background: linear-gradient(180deg, #d9e8ff 0%, #e9f2ff 50%, #ffffff 100%);
+  color: #1c2a38;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+/* ==================================================
+   NAVBAR
+   ================================================== */
+.navbar {
+  background-color: #ffffff !important;
+  border-bottom: 3px solid rgba(0, 80, 180, 0.2);
+  padding: 1rem 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 60, 0.1);
+}
+
+.navbar-brand {
+  color: #004a99 !important;
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.nav-link {
+  color: #003366 !important;
+  font-weight: 600;
+  margin-left: 1rem;
+  transition: 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #007bff !important;
+  transform: translateY(-2px);
+}
+
+/* ==================================================
+   HERO
+   ================================================== */
+#hero {
+  position: relative;
+  box-shadow: none;
+  margin-bottom: 3rem;
+  background-color: #ffffff;
+}
+
+.hero-title {
+  font-size: 4rem;
+  font-weight: 800;
+  color: #003d80; /* azul oscuro legible */
+  text-shadow: none;
+}
+
+.hero-subtitle {
+  font-size: 1.4rem;
+  max-width: 750px;
+  margin: 1.5rem auto;
+  color: #005fcc; /* azul medio */
+}
+.btn-dark {
+  background-color: #003d80 !important;
+  border-radius: 14px;
+  padding: 14px 32px;
+  font-size: 1.2rem;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+.btn-dark:hover {
+  background-color: #005fcc !important;
+  transform: translateY(-3px);
+}
+
+/* ==================================================
+   TITULOS
+   ================================================== */
+.section-title {
+  font-size: 2.3rem;
+  margin-bottom: 2.5rem;
+  font-weight: 700;
+  color: #003366;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  text-align: center;
+}
+
+section {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+/* ==================================================
+   CARDS
+   ================================================== */
+.card-custom {
+  border-radius: 1.4rem;
+  border: none;
+  background: #ffffff;
+  box-shadow: 0 6px 18px rgba(0, 0, 100, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 2.2rem !important;
+}
+
+.card-custom:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 14px 32px rgba(0, 0, 100, 0.25);
+}
+
+.card-custom h5 {
+  font-size: 1.4rem;
+  color: #003366;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* ==================================================
+   ALERTAS (CASOS RELEVANTES)
+   ================================================== */
+.alert {
+  border-left: 10px solid #005fcc;
+  background: #dceaff;
+  color: #00264d;
+  padding: 1.8rem;
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(0, 0, 80, 0.12);
+  line-height: 1.6;
+  font-size: 1.05rem;
+}
+
+.alert strong {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* ==================================================
+   QUIZ
+   ================================================== */
+#quizSection {
+  background: #ffffff;
+  padding: 3rem;
+  border-radius: 1.4rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 120, 0.15);
+  max-width: 900px;
+  margin: auto;
+}
+
+#quizSelect {
+  border-radius: 14px;
+  padding: 0.8rem 1rem;
+  border: 2px solid #a3c9ff;
+}
+
+#quizResult {
+  margin-top: 1.2rem;
+  font-weight: 700;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+/* ==================================================
+   FORMULARIO
+   ================================================== */
+#contacto form {
+  background: #ffffff;
+  padding: 2.8rem;
+  border-radius: 1.4rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 90, 0.15);
+}
+
+#contacto input,
+#contacto textarea {
+  border-radius: 12px;
+  padding: 1rem;
+  border: 2px solid #bcd6ff;
+}
+
+#contacto input:focus,
+#contacto textarea:focus {
+  border-color: #5fa8ff;
+  box-shadow: 0 0 0 0.2rem rgba(95, 168, 255, 0.3);
+}
+
+#contacto button {
+  font-size: 1.2rem;
+  padding: 1rem;
+  border-radius: 14px;
+  background-color: #004a99 !important;
+  box-shadow: 0 5px 14px rgba(0, 0, 120, 0.2);
+}
+
+#contacto button:hover {
+  background-color: #0066cc !important;
+}
+
+/* ==================================================
+   FOOTER
+   ================================================== */
+.footer {
+  padding: 3rem 0;
+  text-align: center;
+  color: #00264d;
+  font-size: 1.1rem;
+  background: #c9dfff;
+  border-top: 3px solid rgba(0, 70, 150, 0.25);
+  margin-top: 4rem;
+}
+
+/* ==================================================
+   RESPONSIVE
+   ================================================== */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2.8rem;
+  }
+
+  .section-title {
+    font-size: 1.9rem;
+  }
+
+  section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
